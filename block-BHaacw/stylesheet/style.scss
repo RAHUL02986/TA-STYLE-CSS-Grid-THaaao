@@ -1,0 +1,73 @@
+@import "reset";
+@import "general";
+@import "grid";
+
+
+@media screen and (max-width: 560px){
+    html{
+        font-size: 8px;
+    }
+    .container {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .first {
+        order: 0;
+    }
+    .fourth {
+        order: 1;
+    }
+    .second {
+        order: 2;
+    }
+    .three {
+        order: 3;
+    }
+    .fifth {
+        order: 4;
+    }
+    .sixth {
+        order: 5;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+    .container {
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .first {
+        order: 0;
+    }
+    .fourth {
+        order: 3;
+    }
+    .second {
+        order: 5;
+    }
+    .third {
+        order: 2;
+    }
+    .fifth {
+        order: 4;
+    }
+    .sixth {
+        order: 1;
+    }
+}

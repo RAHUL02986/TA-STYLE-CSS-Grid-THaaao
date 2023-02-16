@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: rgb(58,74,79);
+    line-height: 1;
+    padding: 1rem;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+nav{
+    background-color:whitesmoke ;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-top: 4px solid rgb(10, 177, 243);
+    a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: rgb(10, 177, 243);
+        &:hover{
+            color: chartreuse;
+        }
+    
+    }
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    background-color: whitesmoke;
+    // padding: .6rem;
+    border-top: 4px solid rgb(10, 177, 243);
+    border-radius: 5px;
+    h2{
+        font-size: 1.2rem;
+        color: grey;
+        margin-bottom: .3rem;
+        padding: .6rem;
+    }
+
+    p{
+        margin-bottom: 1.5rem;
+        padding: 0 .6rem;
+    }
+    a{
+        text-decoration: none;
+        color: red;
+        padding: 0 .6rem;
+        display: grid;
+        grid-row: end;
+    }
+    
+}
+.cat{
+    grid-row: span 3;
+    img {
+        border-radius: 50%;
+        display: grid;
+        place-self: center;
+        width: 200px;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+}
+.three{
+    a{
+        background-color: red;
+        color: white;
+        padding-bottom: 0;
+    }
+    .btn{
+        background-color: red;
+        display: grid;
+        grid-row: end;
+    }
+}
+.four{
+    h2{
+        background-color: rgb(11, 147, 201);
+        color: white;
+    }
+}
